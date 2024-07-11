@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZTime</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playwrite NG Modern', sans-serif;
+            background-color: #597445;
+            color: #F6E6CB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .basic-div {
+            width: 900px;
+            background-color: #729762;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .section-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .line {
+            flex: 1;
+            height: 1px;
+            background-color: #000;
+        }
+
+        .text {
+            margin: 0 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .section {
+            flex: 1;
+            text-align: left;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .calendar, .goal-section, .time-tracking {
+            flex: 1;
+            text-align: left;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .time-tracking {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .timer {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .btn-start-stop {
+            padding: 10px 20px;
+            background-color: #E7D37F;
+            color: #0C1844;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-start-stop:hover {
+            background-color: #E7D37F;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px 0;
+            
+            color: #fff;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-links a {
+            color: #F6E6CB;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-family: 'Arial', sans-serif; 
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+             color: white; 
+        }
+    </style>
+</head>
+<body>
+    <div class="basic-div">
+        <div class="section-line">
+            <div class="line"></div>
+            <div class="text">Task Management</div>
+            <div class="line"></div>
+        </div>
+        <div class="section calendar">
+            <h3>Calendar Section</h3>
+            <ul>
+                <li>July 3: CIE 2</li>
+                <li>July 10: Math Assignment</li>
+                <li>July 13: UI/UX Lab Exam</li>
+            </ul>
+        </div>
+        <div class="section goal-section">
+            <h3>Goal/Section List</h3>
+            <ul>
+                <li>Learn JavaScript fundamentals</li>
+                <li>Complete project planning</li>
+                <li>Research new UI design trends</li>
+            </ul>
+        </div>
+        <div class="section time-tracking">
+            <h3>Time Tracking</h3>
+            <div class="timer">00:00:00</div>
+            <button class="btn-start-stop">Start / Stop</button>
+        </div>
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="settings.html">Settings</a>
+                <a href="analytics.html">Analytics</a>
+                <a href="notifications.html">Notifications</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
