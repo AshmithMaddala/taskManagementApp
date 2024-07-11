@@ -1,1 +1,39 @@
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic laboriosam, vel minima enim ducimus expedita porro, quod debitis culpa optio quos facilis adipisci. Tempora obcaecati laboriosam laborum doloribus voluptates facilis.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+        <div class="settings">
+            <label for="bgColor">Background Color:</label>
+            <input type="color" id="bgColor">
+            <br><br>
+            <label for="fontSize">Font Size:</label>
+            <input type="range" id="fontSize" min="10" max="30" step="1" value="16">
+            <br><br>
+            <label for="fontFamily">Font Family:</label>
+            <select id="fontFamily">
+                <option value="Arial, sans-serif">Arial</option>
+                <option value="Times New Roman, serif">Times New Roman</option>
+                <option value="Verdana, sans-serif">Verdana</option>
+                <option value="Courier New, monospace">Courier New</option>
+            </select>
+            <br><br>
+            <!-- Button to go to index.html -->
+            <button onclick="goToIndex()">Go to Index Page</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+    <script>
+        function goToIndex() {
+            window.location.href = 'index.html'; // Replace 'index.html' with your actual index page URL
+        }
+    </script>
+</body>
+</html>
